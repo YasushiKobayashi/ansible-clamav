@@ -1,0 +1,19 @@
+---
+
+- name: upgrade all packages
+  yum: name=* state=latest
+
+- name: epel-release installe
+  yum: name={{ item }}
+  with_items:
+    - epel-release
+
+- name: epel-release installe
+  yum: name={{ item }}
+  with_items:
+    - epel-release
+
+- name: clamav installe
+  yum: name={{ item }}
+  with_items:
+    - clamav
