@@ -12,3 +12,4 @@
   yum: name={{ item }}
   with_items:
     - clamav
+    - clamav-update
