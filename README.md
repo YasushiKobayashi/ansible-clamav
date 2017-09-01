@@ -5,6 +5,6 @@
 ### install clamav roll
 `ansible-galaxy install YasushiKobayashi.clamav`
 
-### ansible role install vuls
+### ansible role install clamav
 - cenos6
 - amazone-linux
