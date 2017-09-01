@@ -1,17 +1,5 @@
 #!/usr/bin/env ansible-playbook -i hosts
 - hosts: localhost
   connection: local
-  vars:
-    - vuls_path: ~/vuls
-      vuls_user: root
-    - env: test
-  roles:
-    - YasushiKobayashi.golang
   tasks:
     - include: 'tasks/main.yml'
-    - name: set config
-      copy:
-        src: src/config.toml
-
-    - name: config test
-      shell: vuls configtest
